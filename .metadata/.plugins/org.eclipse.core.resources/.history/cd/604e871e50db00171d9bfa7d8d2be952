@@ -1,0 +1,27 @@
+package bak14568;
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String args[]) {
+		Scanner in = new Scanner(System.in);
+		int N = in.nextInt();
+		
+		if ( N <= 5 ) {
+			System.out.println(0);
+			return;
+		}else {
+			while ( true) {
+				
+				for ( int i = 2 ; i<100 ; i=i*2) {
+					int tmp = N;
+					tmp -= i;
+				}
+				
+				
+			}
+			
+			
+		}
+	}
+}

@@ -1,0 +1,26 @@
+package back2698;
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String args[]) {
+		Scanner in = new Scanner(System.in);
+		int T = in.nextInt();
+		int dp[][];
+		dp = new int[100][100];
+		
+		for ( int i = 0 ; i < 100 ; i++) {
+			for ( int j = 0 ; j < 100 ; j++) {
+				
+			}
+		}
+		
+		while ( T> 0) {
+			int n = in.nextInt();
+			int k = in.nextInt();
+			
+			
+			T--;
+		}
+	}
+}

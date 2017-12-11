@@ -1,0 +1,32 @@
+package back2229;
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String args[]) {
+		Scanner in = new Scanner(System.in);
+		int N = in.nextInt();
+		int dp[] = new int[N+1];
+		int arr[] = new int[N+1];
+		for ( int i =1 ; i<= N ;i++) {
+			arr[i] = in.nextInt();
+		}
+		
+		dp[1] = 0;
+		dp[2] = Math.abs(arr[2]-arr[1]);
+		int min = Math.min(arr[1],arr[2]);
+		int max = Math.max(arr[1],arr[2]);
+		
+		for ( int i = 3 ; i <= N ; i++) {
+			
+			if( arr[i] - min > dp[i-1]) {
+				dp[i] = arr[i]-min;
+				if ( arr[i] > max) {
+					max = arr[i];
+				}
+			}
+			dp[i] = Math.max(dp[i-1], dp[i-2]+arr[]);
+			
+		}
+	}
+}
