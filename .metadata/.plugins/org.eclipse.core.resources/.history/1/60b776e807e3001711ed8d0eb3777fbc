@@ -1,0 +1,19 @@
+package back1024;
+
+import java.math.BigDecimal;
+import java.util.Scanner;
+
+public class main {
+	public static void main(String args[]) {
+		Scanner in = new Scanner(System.in);
+		double N = in.nextInt();
+		double L = in.nextInt();
+	
+		double n = L-1;
+		double a = 0;
+		while( n < 101) {
+			
+		}
+		
+	}
+}

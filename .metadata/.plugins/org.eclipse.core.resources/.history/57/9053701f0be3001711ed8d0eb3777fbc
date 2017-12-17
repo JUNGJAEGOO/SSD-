@@ -1,0 +1,34 @@
+package back5557;
+
+import java.util.Scanner;
+
+public class Main {
+	static long dp[][] = new long[21][101];
+	static int arr[];
+	public static void main(String args[]) {
+		Scanner in = new Scanner(System.in);
+		int N = in.nextInt();
+		arr = new int[N+1];
+		for ( int i = 1 ; i <= N ; i++) {
+			arr[i] = in.nextInt();
+		}
+		
+		System.out.println(DFS(arr[0],0));
+	
+	}
+	
+	public static long DFS(int sum,int visit) {
+		if ( sum > 20 || sum < 0) {
+			return 0;
+		}
+		
+		long ret = dp[sum][visit];
+		if ( ret != 0) { return ret;}
+		ret = 0;
+		
+		ret += DFS(sum+arr[visit],visit+1);
+		ret += DFS(sum-arr[visit],visit+1);
+		
+		return ret;
+	}
+}

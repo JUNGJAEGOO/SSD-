@@ -1,0 +1,16 @@
+package back1024;
+
+import java.util.Scanner;
+
+public class main {
+	public static void main(String args[]) {
+		Scanner in = new Scanner(System.in);
+		int N = in.nextInt();
+		int L = in.nextInt();
+		
+		int cnt = 0;
+		while( cnt < 101) {
+			
+		}
+	}
+}
