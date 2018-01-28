@@ -1,111 +1,99 @@
 package back14950;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.PriorityQueue;
-import java.util.Queue;
-import java.util.StringTokenizer;
+import java.io.*;
+import java.util.*;
 
 public class Main {
+	static int N,M,t;
+	static long increase = 0;
+	static ArrayList<node> adj[];
 	static boolean visit[];
-	static long result = 0;
-	static int N,T;
-	static ArrayList<data> adj[];
-	static int inf = 1900000000;
+	static long ans = 0;
+	static long count = 0;
+	
 	public static void main(String args[]) throws IOException {
-		BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine()," ");
 		N = Integer.parseInt(st.nextToken());
-		int M = Integer.parseInt(st.nextToken());
-		T = Integer.parseInt(st.nextToken());
-		
+		M = Integer.parseInt(st.nextToken());
+		t = Integer.parseInt(st.nextToken());
+		adj = new ArrayList[N+1];
+		for (int i = 1 ; i<= N ; i++) {
+			adj[i] = new ArrayList<>();
+		}
 		
 		visit = new boolean[N+1];
-		adj = new ArrayList[N+1];
-		for ( int j = 0 ; j <= N ; j++) {
-			adj[j] = new ArrayList<data>();
-		}
-
-		for ( int i = 0 ; i < M ; i++) {
+		
+		for (int i = 0 ; i < M ; i++) {
 			st = new StringTokenizer(br.readLine()," ");
-			int x = Integer.parseInt(st.nextToken());
-			int y = Integer.parseInt(st.nextToken());
+			int from = Integer.parseInt(st.nextToken());
+			int to = Integer.parseInt(st.nextToken());
 			int cost = Integer.parseInt(st.nextToken());
-			//System.out.println(x+" "+y+" "+cost);
-			adj[x].add(new data(y,cost));
-			adj[y].add(new data(x,cost));
+			adj[from].add(new node(to,cost));
+			adj[to].add(new node(from,cost));
 		}
 		
+		go();
 		
-		BFS();
-		
-		
-		System.out.println(result);
-		
+		System.out.println(ans);
 	}
 	
-	public static void BFS() {
-		visit[1] = true;
-		PriorityQueue<data> pq = new PriorityQueue<>();
-		int min = inf;
-		int minidx = 0;
-		for ( int i = 0 ; i < adj[1].size() ; i++) {
-			pq.add(new data(adj[1].get(i).index,adj[1].get(i).cost));
-		}
+	public static void go() {
 		
-		int plus= T*(-1);
-		//System.out.println(plus);
-		//System.out.println(min+" "+minidx);
+		PriorityQueue<node> pq = new PriorityQueue<node>();
+		pq.add(new node(1,0));
+		
 		while ( !pq.isEmpty() ) {
-			data tmp = pq.poll();
-			result+=tmp.cost;
-			plus+=T;
-			result+=plus;
+			node now = pq.poll();
+			//pq = new PriorityQueue<node>();
+			int idx = now.to;
 			
-			//System.out.println(plus);
-			visit[tmp.index] = true;
-			//System.out.println(visit[tmp.index]);
-			//System.out.println("@"+tmp.cost+" "+tmp.index);
-			
-			for ( int i = 0 ; i < adj[tmp.index].size() ; i++) {
-				//System.out.println(adj[tmp.index].get(i).index+","+visit[adj[tmp.index].get(i).index]);
-				if ( visit[ adj[tmp.index].get(i).index ] != true) {
-					//System.out.println(adj[tmp.index].get(i).index);
-					pq.add(new data(adj[tmp.index].get(i).index,adj[tmp.index].get(i).cost));
-					
-				}
+			if ( visit[now.to] == true) {
+				continue;
 			}
 			
-			boolean pass = true;
-			for ( int i = 1 ; i <= N ; i++) {
-				if ( visit[i] == false) {
-					pass = false;
-				}
+			long cost = now.cost;
+			visit[idx] = true;
+			count++;
+			//System.out.println(idx+" "+cost);
+			//System.out.println(cost+"+"+increase);
+			
+			ans += (cost+increase);
+			if ( count > 1) {
+			increase += t;
 			}
-			if ( pass ) {
+			if ( count == N ) {
 				break;
 			}
-		}
-	}
-	
-	public static class data implements Comparable<data>{
-		int index;
-		int cost;
-		data(int index, int cost){
-			this.index = index;
-			this.cost =cost;
+			
+			
+			//System.out.println(increase);
+			
+			for ( int i = 0 ; i < adj[idx].size() ; i++) {
+				int next = adj[idx].get(i).to;
+				long nextcost = adj[idx].get(i).cost;
+				if ( visit[next] == false) {
+					pq.add(new node(next,nextcost));
+				}
+				
+			}
 		}
 		
-		public int compareTo(data o) {
-			if ( o.cost > this.cost) {
-				return -1;
-			}else {
+	}
+	
+	public static class node implements Comparable<node>{
+		int to;
+		long cost;
+		node(int to,long cost){
+			this.to = to;
+			this.cost = cost;
+		}
+		@Override
+		public int compareTo(node o) {
+			if ( this.cost > o.cost) {
 				return 1;
 			}
+			return -1;
 		}
 	}
 }
