@@ -5,88 +5,127 @@ import java.io.*;
 
 public class Main {
 
-	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-	
-	static int N;
-	static int M;
-	
-	static char oriboard[][];
+	static char originW[][];
+	static char originB[][];
+	static char mat[][];
 	
 	public static void main(String args[]) throws Exception {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine()," ");
-		N = Integer.parseInt(st.nextToken());
-		M = Integer.parseInt(st.nextToken());
-		oriboard = new char[N+2][M+2];
-		for( int i = 1 ; i <= N ; i++){
-			String s = br.readLine();
-			char tmp[] = s.toCharArray();
-			for ( int j = 1 ; j<= M ; j ++ ){
-				 
-				 oriboard[i][j] = tmp[j-1];
+		int N = Integer.parseInt(st.nextToken());
+		int M = Integer.parseInt(st.nextToken());
+		originW = new char[8][8];
+		originB = new char[8][8];
+		mat = new char[N][M];
+		
+		for (int i = 0 ; i < N ; i++) {
+			char tmp[] = br.readLine().toCharArray();
+			for (int j = 0 ; j < M ; j++) {
+				mat[i][j] = tmp[j];
 			}
 		}
 		
-
-		int mincount = 100000;
-		int x = 1;
-		int y = 1;
-		
-		while ( true ){
-			
-			
-			int tmpcount = BFS(x,y);
-			System.out.println(tmpcount);
-			if ( mincount > tmpcount ) { mincount = tmpcount; }
-			
-			if ( x+7 < N){ x++; }
-			else if( y+7 < M ){ y++; }
-			else{ break; }
-			
-		}
-		
-		System.out.print(mincount);
-		
-	}
 	
-	public static int BFS(int startX,int startY){
-
-		char board[][] = new char[10][10];
-		for( int i = 1 ; i <= 8 ; i++){
-			for ( int j = 1 ; j<= 8 ; j ++ ){
-				 board[i][j] = oriboard[startX+i][startY+j];
-			}
-		}
+		init();
 		
-		
-		int count = 0;
-		
-		for ( int x = 1 ; x <= 8 ; x ++){
-			for ( int y = 1 ; y <= 8 ; y++){
-		
-			if ( board[x][y] == 'W'){
-
-				if ( board[x][y+1] == 'W' ){
-					board[x][y+1] = 'B';
-					count++;
-				}
-					
-			}
-			else if ( board[x][y] == 'B'){
-				if ( board[x][y+1] == 'B'){
-					board[x][y+1] = 'W';
-					count++;
+		int diffW=1000000000,diffB=1000000000;
+		for (int i = 0 ; i < N ; i++) {
+			for (int j = 0 ; j < M ; j++) {
+				if ( 8-i >=0 && i+8 <= N) {
+					if ( 8-j >=0 && j+8 <= M) {
+						int map[][] = new int[8][8];
+						//System.out.println(i+" "+j);
+						for (int k = i ; k < i+8 ; k++) {
+							for (int s = j ; s < j+8 ; s++) {
+								map[k-i][s-j] = mat[k][s];
+							}
+						}
+						
+						int ans[] = biggyo(map);
+						//System.out.println(ans[0]+" "+ans[1]);
+						diffW = Math.min(ans[0], diffW);
+						diffB = Math.min(ans[1], diffB);
 					}
 				}
 			}
 		}
+
+		System.out.print(Math.min(diffW, diffB));
 		
-		for(int i = 1 ; i<=8 ;i++) {
-			for (int j = 1 ; j<=8 ;j++) {
-				System.out.print(board[i][j]);
+		
+	}
+	
+	public static int[] biggyo(int map[][]) {
+		int diffW = 0,diffB = 0;
+	/*	for (int i = 0 ; i < 8 ; i++) {
+			for (int j = 0 ; j < 8 ; j++) {
+				System.out.print(originW[i][j]);
 			}System.out.println();
 		}
-
-		return count;
+		System.out.println("-------");
+		for (int i = 0 ; i < 8 ; i++) {
+			for (int j = 0 ; j < 8 ; j++) {
+				System.out.print(originB[i][j]);
+			}System.out.println();
+		}
+		System.out.println("-------");*/
+		for (int i = 0 ; i < 8 ; i++) {
+			for (int j = 0 ; j < 8 ; j++) {
+				if ( map[i][j] != originW[i][j]) {
+					diffW++;
+				}
+				if ( map[i][j] != originB[i][j]) {
+					diffB++;
+				}
+			}
+		}
+		
+		int arr[] = {diffW,diffB};
+		return arr;
+	}
+	
+	public static void init() {
+		for (int i = 0 ; i < 8 ; i++) {
+			
+			for (int j = 0 ; j < 8 ; j++) {
+				if ( i%2 == 0) {
+					if ( j%2 == 0) {
+						originW[i][j] = 'B';
+					}else {
+						originW[i][j] = 'W';
+					}	
+				}
+				else {
+					if ( j%2 == 0) {
+						originW[i][j] = 'W';
+					}else {
+						originW[i][j] = 'B';
+					}
+				}
+				
+			}
+		}
+		
+		
+		for (int i = 0 ; i < 8 ; i++) {
+			
+			for (int j = 0 ; j < 8 ; j++) {
+				if ( i%2 == 0) {
+					if ( j%2 == 0) {
+						originB[i][j] = 'W';
+					}else {
+						originB[i][j] = 'B';
+					}	
+				}
+				else {
+					if ( j%2 == 0) {
+						originB[i][j] = 'B';
+					}else {
+						originB[i][j] = 'W';
+					}
+				}
+			}
+		}
 	}
 	
 }
