@@ -8,7 +8,7 @@ public class Main {
 	static ArrayList<node> adj[];
 	static int dist[];
 	static int inf = 1000000000;
-	
+	static ArrayList<ArrayList<Integer>> second;
 	
 	public static void main(String args[]) {
 		Scanner in = new Scanner(System.in);
@@ -39,17 +39,24 @@ public class Main {
 			System.out.println(dist[i]);
 		}
 		*/
-		boolean visit[] = new boolean[N];
+		ArrayList<Integer> visit = new ArrayList<>();
+		second = new ArrayList<>();
 		//System.out.println("처음 최단거리 "+dist[E]);
 		int best = dist[E];
 		
-		boolean pass = DFS(0,0,best,visit);
+		DFS(S,0,best,visit);
+		
+	/*	for (int i = 0 ; i < second.size() ; i++) {
+			System.out.println(second.get(i));
+		}
+		*/
+		delete();
 		
 		Arrays.fill(dist, inf);
 		
 		diikstra();
 		
-		if ( dist[E] == inf) {
+		if ( dist[E] == inf ) {
 			System.out.println(-1);
 		}else {
 			System.out.println(dist[E]);
@@ -58,39 +65,58 @@ public class Main {
 		}
 	}
 	
-	public static boolean DFS(int start,int dist,int best,boolean visit[]) {
+	public static void delete() {
 		
-		//System.out.println(start+" "+dist);
+		for ( int i = 0 ; i < second.size() ; i++) {
+			
+			ArrayList<Integer> now = second.get(i);
+			//System.out.println(now);
+			int s = S;
+			
+			for (int k = 0 ; k < now.size() ; k++) {
+				int n = now.get(k);
+				//System.out.println(s+" "+n);
+				for (int j = 0 ; j < adj[s].size() ; j++) {
+
+					if ( adj[s].get(j).to == n) {
+						adj[s].get(j).cost = inf;
+						//System.out.println(s+" 에서 "+adj[s].get(j).to+" 무한대로");
+						s = adj[s].get(j).to;
+						
+						break;
+					}
+				}
+			}
+			
+		}
+	}
+	
+	public static void DFS(int start,int dist,int best,ArrayList<Integer> visit) {
+		
+		//System.out.println(start+" "+dist+" "+visit);
 		if ( dist>best) {
-			return false;
+			return;
 		}
 		if ( start == E && dist == best) {
-			//visit[E] = false;
-			//System.out.println(E+"는 거짓으로");
-			return true;
+			
+			//System.out.println(visit);
+			second.add((ArrayList<Integer>) visit.clone());
+			return;
 		}
 		
-		boolean ret = false;
 		for ( int i = 0 ; i < adj[start].size() ; i++) {
 			int next = adj[start].get(i).to;
 			int cost = adj[start].get(i).cost;
 			//System.out.println(next+" "+cost+"!!!!");
 			
-			if( !visit[next] ) {
-				visit[next] = true;
-				boolean a  = DFS(next,dist+cost,best,visit);
-				visit[next] = false;
-				if ( a ) {
-				adj[start].get(i).cost = inf;
-				//System.out.println(start+" 에서 "+adj[start].get(i).to+" 무한대로");
-				ret = true;
-				}
-				
+			if( !visit.contains((Integer)next)) {
+				visit.add(next);
+				DFS(next,dist+cost,best,visit);
+				visit.remove(visit.size()-1);
 			}
 			
 		}
-		
-		return ret;
+
 	}
 	
 	public static void diikstra() {
