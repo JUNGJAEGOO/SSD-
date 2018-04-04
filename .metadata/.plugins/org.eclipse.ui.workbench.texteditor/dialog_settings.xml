@@ -12,6 +12,7 @@
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="A 5"/>
 			<item value="end = max;"/>
 			<item value="  "/>
 			<item value="· "/>

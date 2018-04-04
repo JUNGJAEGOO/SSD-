@@ -3,100 +3,95 @@ package back1005;
 import java.util.*;
 
 public class Main {
-	static ArrayList<Integer> inner[];
-	static ArrayList<Integer> adj[];
+	static int inner[];
+	static ArrayList<node> adj[];
 	static int cost[];
 	static int N,K;
 	static int Target;
 	static int result[];
 	static int inf = 1900000000;
 	static boolean visit[];
+	static int fortheWin;
+	static int dist[];
 	
 	public static void main(String args[]) {
+		
 		Scanner in = new Scanner(System.in);
 		int T = in.nextInt();
-		while ( T > 0) {
+		while ( T > 0 ) {
 			
 			N = in.nextInt();
 			K = in.nextInt();
-			
-			inner = new ArrayList[N+1];
-			adj = new ArrayList[N+1];
-			for ( int i = 1 ; i <= N ; i++) {
-				inner[i] = new ArrayList<Integer>();
-				adj[i] = new ArrayList<Integer>();
+			cost = new int[N+1];
+			for ( int i = 1 ;i <= N ; i++) {
+				cost[i] = in.nextInt();
 			}
 			
-			result = new int[N+1];
-			//Arrays.fill(result, inf);
-			cost = new int[N+1];
-			visit = new boolean[N+1];
-			for ( int i = 1 ; i<= N ; i++) {
-				cost[i] = in.nextInt();
+			adj = new ArrayList[N+1];
+			inner = new int[N+1];
+			for ( int i = 0 ; i <= N ; i++) {
+				adj[i] = new ArrayList<>();
 			}
 			
 			for ( int i = 0 ; i < K ; i++) {
 				int from = in.nextInt();
 				int to = in.nextInt();
-				adj[from].add(to);
-				inner[to].add(from);
+				adj[from].add(new node(to,cost[to-1]));
+				inner[to]++;
 			}
+			fortheWin = in.nextInt();
 			
-			Target = in.nextInt();
-	
-			weesang();
+			visit = new boolean[N+1];
+			dist = new int[N+1];
+			BFS();
 			
-//			for ( int i = 1 ; i <= N ; i++) {
-//				System.out.print(result[i]+" ");
-//			}System.out.println();
-			
-			System.out.println(result[Target]);
-			
+			System.out.println(dist[fortheWin]);
 			T--;
 		}
+	
 	}
 	
-	public static void weesang() {
+	public static void BFS() {
+		Queue<node> q = new LinkedList<>();
 		
-		Queue<Integer> q = new LinkedList<>();
-		for ( int i = 1 ; i <= N ; i++) {
-			if ( inner[i].size() == 0) {
-				result[i] = cost[i];
-				q.add(i);
+		for ( int i = 1 ; i <= N ; i++ ) {
+			if ( inner[i] == 0 ) {
+				q.add(new node(i,cost[i]));
+				dist[i] = cost[i];
 				visit[i] = true;
-				break;
 			}
 		}
 		
-		while( !q.isEmpty() ) {
+		while ( !q.isEmpty() ) {
+			node now = q.poll();
+			int idx = now.idx;
+			int c = now.cost;
 			
-			
-			int now = q.poll();
-			//System.out.println("지금 "+now);
-			if ( now == Target) {
-				break;
-			}
-			
-			for ( int i = 0 ; i < adj[now].size() ; i++) {
-				int next = adj[now].get(i);
-				result[next] = Math.max(result[next],cost[next]+result[now]);
-				for ( int j = 0; j < inner[next].size() ; j++) {
-					if ( inner[next].get(j) == now ) {
-							inner[next].remove(j);
-						break;
-					}
+			for ( int i = 0 ; i < adj[idx].size() ; i++) {
+				int next = adj[idx].get(i).idx;
+				inner[next]--;
+				if ( dist[next] < dist[idx] + cost[next]) {  // 역 다익스트라
+					dist[next] = dist[idx] + cost[next];
 				}
 			}
 			
 			for ( int i = 1 ; i <= N ; i++) {
-				if ( inner[i].size() == 0 && visit[i] == false) {
-					
-					q.add(i);
+				if ( inner[i] == 0 && visit[i] == false) {
+					q.add(new node(i,cost[i]+c));
 					visit[i] = true;
 				}
 			}
 			
+			
 		}
-		
+	}
+	
+	public static class node{
+		int idx;
+		int cost;
+		node (int idx,int cost){
+			this.idx = idx;
+			this.cost = cost;
+		}
 	}
 }
