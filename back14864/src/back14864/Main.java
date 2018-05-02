@@ -1,29 +1,38 @@
 package back14864;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
 	public static void main(String args[]) {
 		Scanner in = new Scanner(System.in);
+	
 		int N = in.nextInt();
 		int M = in.nextInt();
 		
-		int arr[] = new int[N+1];
-		
-		for ( int i = 1 ; i <= N ; i++) {
-			arr[i] = i;
+		int arr[] = new int[N];
+		for( int i = 0 ; i < N ; i++) {
+			arr[i] = i + 1;
 		}
 		
 		for ( int i = 0 ; i < M ; i++) {
-			int a = in.nextInt();
-			int b = in.nextInt();
-			arr[a]++;
-			arr[b]--;
+			int x = in.nextInt() - 1;
+			int y = in.nextInt() -1 ;
+			arr[x]++;
+			arr[y]--;
 		}
 		
-		for ( int i = 1 ; i<= N; i++) {
-			System.out.print(arr[i]+" ");
+		StringBuilder sb = new StringBuilder();
+		boolean same[] = new boolean[N+1];
+		for ( int i = 0 ; i < N ; i++) {
+			if ( same[arr[i]] == false) {
+				same[arr[i]] = true;
+			}else {
+				System.out.print(-1);
+				return;
+			}
+			sb.append(arr[i]+" ");
 		}
 		
+		System.out.print(sb);
 	}
 }
