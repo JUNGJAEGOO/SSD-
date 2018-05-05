@@ -12,6 +12,7 @@
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="0 12 12"/>
 			<item value="text"/>
 			<item value="bar"/>
 			<item value="left"/>
@@ -26,7 +27,6 @@
 			<item value="5 5"/>
 			<item value="8"/>
 			<item value="14"/>
-			<item value="45"/>
 		</list>
 		<list key="replacehistory">
 			<item value=" "/>
