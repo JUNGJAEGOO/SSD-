@@ -17,7 +17,6 @@
     <fullyQualifiedTypeName name="java.security.MessageDigest"/>
     <fullyQualifiedTypeName name="javafx.scene.Node"/>
     <fullyQualifiedTypeName name="org.w3c.dom.Node"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="java.lang.Thread"/>
@@ -37,5 +36,6 @@
     <fullyQualifiedTypeName name="javafx.scene.control.Button"/>
     <fullyQualifiedTypeName name="java.io.BufferedReader"/>
     <fullyQualifiedTypeName name="java.math.BigInteger"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>

@@ -3,73 +3,86 @@ package back2503;
 import java.util.*;
 
 public class Main {
-	static ArrayList<node> candidate = new ArrayList<>();
-	
 	public static void main(String args[]) {
 		Scanner in = new Scanner(System.in);
 		int N = in.nextInt();
-		int T = N;
 		
-		for (int i = 1 ; i <= 9 ; i++) {
-			for ( int j = 1 ; j <= 9 ; j++) {
-				for ( int k = 1 ; k <= 9 ; k++) {
-					candidate.add(new node(i*100+j+10+k,true));
+		int arrX[] = new int[N];
+		int arrS[] = new int[N];
+		int arrB[] = new int[N];
+		
+		for (int i = 0 ; i < N ; i++) {
+			int X = in.nextInt();
+			int S = in.nextInt();
+			int B = in.nextInt();
+			arrX[i] = X;
+			arrS[i] = S;
+			arrB[i] = B;
+		}
+		
+		int ans = 0;
+		for ( int i = 123 ; i <= 987 ; i++) {
+			
+			int a[] = new int[3];
+			a[0] = i/100;
+			a[1] = (i/10)%10;
+			a[2] = i%10;
+			
+			if ( a[0] == 0 || a[1] == 0 || a[2] == 0) {
+				continue;
+			}
+			
+			if ( a[0] == a[1] || a[1] == a[2] || a[0] == a[2] ) {
+				continue;
+			}
+			
+			int sum = 0;
+			
+			for ( int j = 0 ; j < N ; j++) {
+				
+				int b[] = new int[3];
+				b[0] = arrX[j]/100;
+				b[1] = (arrX[j]/10)%10;
+				b[2] = arrX[j]%10;
+				
+				int strike = 0;
+				int ball = 0;
+				
+				if ( a[0] == b[0]  ) {
+					strike++;
+				}
+				
+				if ( a[1] == b[1]  ) {
+					strike++;
+				}
+				
+				if ( a[2] == b[2]  ) {
+					strike++;
+				}
+				
+				if ( a[0] == b[1] || a[0] == b[2]) {
+					ball++;
+				}
+				
+				if ( a[1] == b[0] || a[1] == b[2]) {
+					ball++;
+				}
+				
+				if ( a[2] == b[1] || a[2] == b[0]) {
+					ball++;
+				}
+				
+				if ( strike == arrS[j] && ball == arrB[j]) {
+					sum++;
 				}
 			}
+			
+			if ( sum == N) {
+				ans++;
+			}
+			
 		}
 		
-		while( T > 0) {
-			int q = in.nextInt();
-			int bak = q/100;
-			int sib = (q%100)/10;
-			int il = q%10;
-			
-			int s = in.nextInt();
-			int b = in.nextInt();
-			
-			
-				if ( s == 3) {
-					for (int i = 0 ; i < candidate.size() ; i++) {
-						if ( candidate.get(i).num == bak*100+sib+10+il ) {
-							
-						}else if ( candidate.get(i).num == sib*100+bak+10+il ){
-							
-						}else if ( candidate.get(i).num == il*100+bak+10+sib ) {
-							
-						}else if ( candidate.get(i).num == sib*100+il+10+bak ) {
-							
-						}else if ( candidate.get(i).num == il*100+sib+10+bak ) {
-							
-						}else if ( candidate.get(i).num == bak*100+il+10+sib ) {
-							
-						}else if ( candidate.get(i).num == bak*100+sib+10+il ) {
-							
-						}else {
-							candidate.get(i).ok = false;
-						}
-					}
-				}else if ( s == 2 ) {
-					
-				}else if ( s == 1) {
-					
-				}
-			
-			
-			T--;
-		}
-	}
-	public static class node{
-		int num;
-		boolean ok;
-		node (int num,boolean ok){
-			this.num = num;
-			this.ok = ok;
-		}
-	}
-	
-	public static void search(int a) {
-		
-		
-		
+		System.out.print(ans);
 	}
 }
