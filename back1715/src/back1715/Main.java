@@ -3,37 +3,31 @@ package back1715;
 import java.util.*;
 
 public class Main {
-	static int dp[];
-	static int arr[];
 	
 	public static void main(String args[]) {
 		Scanner in = new Scanner(System.in);
 		int N = in.nextInt();
-		dp = new int[100001];
-		for (int i = 0 ; i < 100001 ;i++) {
-			dp[i] = -1;
-		}
-		PriorityQueue<Integer> pq = new PriorityQueue<>();
-		arr = new int[N+1];
-		for (int i = 1 ; i<= N ; i++) {
-			pq.add(in.nextInt());
+		PriorityQueue<Long> pq = new PriorityQueue<>();
+		
+		for ( int i = 0 ; i < N ; i++) {
+			pq.add(in.nextLong());
 		}
 		
-		if ( N == 1) {
-			System.out.print(pq.poll());
+		if ( pq.size() == 1 ) {
+			System.out.print(0);
 			return;
 		}
 		
 		long sum = 0;
-
-		long before = pq.poll();
-		while ( !pq.isEmpty() ) {
-			sum += before + pq.poll();
-			before = sum;
+		
+		while ( pq.size() != 1 && !pq.isEmpty() ) {
+			long tmp = pq.poll() + pq.poll();
+			sum += tmp;
+			pq.add(tmp);
+			
 		}
 		
-		System.out.println(sum);
-		
+		System.out.print(sum);
 	}
 	
 }
