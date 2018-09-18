@@ -1,42 +1,79 @@
 package back2240;
 
-import java.util.Scanner;
+import java.io.*;
+import java.util.*;
 
 public class Main {
-	public static void main(String args[]) {
-		Scanner in = new Scanner(System.in);
-		int T = in.nextInt();
-		int W = in.nextInt();
-		int arr[] = new int[T+1];
-		for (int i = 1 ; i<= T ; i++) {
-			arr[i] = in.nextInt();
+	static int T,W;
+	static int arr[];
+	static int dp[][][];
+	
+	public static void main(String args[]) throws Exception {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(br.readLine()," ");
+		T = Integer.parseInt(st.nextToken());
+		W = Integer.parseInt(st.nextToken());
+		arr = new int[T+1];
+		for ( int i = 1 ; i <= T ; i++) {
+			arr[i] = Integer.parseInt(br.readLine());
 		}
-		int dp[][][] = new int[T+1][W+2][3];
 		
-		for ( int j = 1 ; j <= W+1; j++) {
+		dp = new int[3][1001][31];
+		for (int i = 0 ; i< 3 ; i++) {
+			for ( int j = 0 ; j < 1001 ; j++) {
+				for ( int k = 0 ; k < 31 ; k++) {
+					dp[i][j][k] = -1;
+				}	
+			}
+		}
+		
+		System.out.print(func(1,0,W));
+		
+	}
+	
+	public static int func(int pos,int time,int limit) {
+		
+		if ( time == T ) {
+			return 0;
+		}
+		
+		int ret = dp[pos][time][limit];
+		if ( ret != -1) {
+			return ret;
+		}
+		ret = 0;
+		
+		if ( pos == 1) {
+			if ( arr[time+1] == 1) {
+				ret = Math.max(ret, 1 + func(1,time+1,limit));
+			}else {
+				ret = Math.max(ret, func(1,time+1,limit));
+			}
 			
-			for ( int i = 1 ; i <= T; i++) {
-				if ( arr[i] == 1) {
-				
-					dp[i][j][1] = Math.max(dp[i-1][j][1]+1,dp[i-1][j-1][2]+1);
-					dp[i][j][2] = Math.max(dp[i-1][j-1][1],dp[i-1][j][2]);
-					
-				}
-				else if ( arr[i] == 2) {
-					
-					dp[i][j][1] = Math.max(dp[i-1][j][1],dp[i-1][j-1][2]);
-					dp[i][j][2] = Math.max(dp[i-1][j-1][1]+1,dp[i-1][j][2]+1);
-					
+			if ( limit -1 >= 0 ) {
+				if ( arr[time+1] == 2) {
+					ret = Math.max(ret , 1 + func(2,time+1,limit-1));
+				}else {
+					ret = Math.max(ret , func(2,time+1,limit-1));
 				}
 			}
 			
+		}else {
+			if ( limit-1 >= 0) {
+				if ( arr[time+1] == 1) {
+					ret = Math.max(ret, 1 + func(1,time+1,limit-1));
+				}else {
+					ret = Math.max(ret, func(1,time+1,limit-1));
+				}
+			}
+			
+			if ( arr[time+1] == 2) {
+				ret = Math.max(ret , 1 + func(2,time+1,limit));
+			}else {
+				ret = Math.max(ret , func(2,time+1,limit));
+			}
 		}
 		
-		int max = 0;
-		for ( int i = 1 ; i <= W+1 ; i++) {
-			//System.out.println(dp[T][i][1]+" "+dp[T][i][2]);
-			max = Math.max(max,Math.max(dp[T][i][1],dp[T][i][2]));
-		}
-		System.out.print(max);
+		return dp[pos][time][limit] = ret;
 	}
 }

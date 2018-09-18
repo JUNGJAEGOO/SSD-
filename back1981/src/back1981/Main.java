@@ -1,77 +1,102 @@
 package back1981;
 
+import java.io.*;
 import java.util.*;
 
 public class Main {
 	static int mat[][];
-	static int diff[][];
+	static int dp[][];
+	static boolean visit[][];
 	static int inf = 1000000000;
 	static int X[] = {0,0,-1,1};
 	static int Y[] = {-1,1,0,0,};
 	static int N;
 	
-	public static void main(String args[]) {
-		Scanner in = new Scanner(System.in);
-		N = in.nextInt();
+	public static void main(String args[]) throws Exception {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		N = Integer.parseInt(br.readLine());
 		mat = new int[N][N];
 		
 		for ( int i = 0 ; i < N ; i++) {
+			StringTokenizer st= new StringTokenizer(br.readLine()," ");
 			for( int j = 0 ; j < N ; j++) {
-				mat[i][j] = in.nextInt();
+				mat[i][j] = Integer.parseInt(st.nextToken());
 			}
 		}
 		
-		diff = new int[N][N];
-		for ( int i = 0 ; i < N ; i++) {
-			for ( int j = 0 ; j < N ; j++) {
-				diff[i][j] = inf;
+		Queue<node> q = new LinkedList<>();
+		
+		int left = 0;
+		int right = 200;
+		while ( left <= right) {
+			
+			int mid = (left+right) >> 1;
+			
+			dp = new int[N][N];
+			
+			for ( int i = 0 ; i < N ; i++) {
+				for ( int j = 0 ; j < N ; j++) {
+					dp[i][j] = inf;
+				}
 			}
+			
+			q.add(new node(1,1,mat[0][0],mat[0][0]));
+			
+			boolean pass = false;
+			while ( !q.isEmpty() ) {
+				
+				node now = q.poll();
+				int x = now.x;
+				int y = now.y;
+				int max = now.max;
+				int min = now.min;
+				
+
+				for ( int i = 0 ; i < 4 ; i++) {
+					int nx = x + X[i];
+					int ny = y + Y[i];
+					
+					if ( nx >= 0 && ny >= 0 && nx < N && ny < N) {
+						int nmin = Math.min(min, mat[nx][ny]);
+						int nmax = Math.max(max, mat[ny][ny]);
+						if ( dp[nx][ny] > nmax - nmin) {
+							if ( nmax - nmin <= mid) {
+								dp[nx][ny] = nmax - nmin;
+								q.add(new node(nx,ny,nmax,nmin));
+							}
+						}
+					}
+				}
+				
+				
+			}
+			
+			/*for ( int i = 0 ; i < N ; i++) {
+				for ( int j = 0 ; j < N ; j++) {
+					System.out.print(dp[i][j]+" ");
+				}System.out.println();
+			}System.out.println();*/
+			
+			if ( dp[N-1][N-1] != inf) {
+				pass = true;
+			}
+			
+			System.out.println(left+" "+right+" "+mid+" "+pass);
+			
+			if ( pass ) {
+				right = mid -1;
+			}else {
+				left = mid + 1;
+			}
+			
 		}
 		
-		BFS();
+		System.out.print(left);
 		
-		/*for ( int i = 0 ; i < N ; i++) {
-			for ( int j = 0 ; j < N ; j++) {
-				System.out.print(diff[i][j]+" ");
-			}System.out.println();
-		}*/
-		
-		System.out.print(diff[N-1][N-1]);
 		
 	}
 	
-	public static void BFS() {
-		Queue<node> q = new LinkedList<>();
-		q.add(new node(0,0,mat[0][0],mat[0][0]));
-		diff[0][0] = 0;
-		
-		while ( !q.isEmpty() ) {
-			node now = q.poll();
-			int x = now.x;
-			int y = now.y;
-			int max = now.max;
-			int min = now.min;
-			
-			for ( int i = 0 ; i < 4 ; i ++) {
-				int nx = x + X[i];
-				int ny = y + Y[i];
-			
-				if ( nx >= 0 && ny >= 0 && nx < N && ny < N) {
-					
-					int nmax = Math.max(mat[nx][ny],max);
-					int nmin = Math.min(mat[nx][ny],min);
-					
-					if ( diff[nx][ny] > nmax - nmin ) {
-						q.add(new node(nx,ny,nmax,nmin));
-						diff[nx][ny] = nmax - nmin;
-					}
-					
-				}
-				
-			}
-		}
 
-	}
 	
 	public static class node{
 		int x,y;
