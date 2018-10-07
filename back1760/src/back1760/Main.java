@@ -1,148 +1,106 @@
 package back1760;
 
-import java.util.Scanner;
+import java.util.*;
+import java.io.*;
 
-public class Main {
+public class Main  {
 	static int M,N;
 	static int mat[][];
-	static boolean visit[][];
-	static int ans = 0;
-	public static void main(String args[]) {
-		Scanner in = new Scanner(System.in);
-		M = in.nextInt();
-		N = in.nextInt();
+	static boolean visit[];
+	static ArrayList<Integer> adj[];
+	static int B[];
+	
+	
+	public static void main(String args[]) throws Exception {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(br.readLine()," ");
+		
+		M = Integer.parseInt(st.nextToken());
+		N = Integer.parseInt(st.nextToken());
+		
 		mat = new int[M][N];
 		for (int i = 0 ; i < M ; i++) {
+			st = new StringTokenizer(br.readLine()," ");
 			for ( int j = 0 ; j < N ; j++) {
-				mat[i][j] = in.nextInt();
+				mat[i][j] = Integer.parseInt(st.nextToken());
 			}
 		}
 		
-		back(0,0,0,true);
-		System.out.println(ans);
-	}
-	
-	public static void back(int x,int y,int sum,boolean start) {
-		
-		if ( start == false) {
-			if ( checkCols(x,y) == false && checkRows(x,y) == false) {
-				ans = Math.max(sum,ans);
-				return;
-			}
+		adj = new ArrayList[10001];
+		for ( int i = 0 ; i < 10001 ; i++) {
+			adj[i] = new ArrayList<>();
 		}
 		
-		for (int i = 0 ; i < M ; i++) {
+		int num1 = 1 , num2 = 1;
+		int mat1[][] = new int[M][N];
+		int mat2[][] = new int[M][N];
+		
+		for ( int i = 0 ; i< M ; i++) {
+			for (int j = 0 ; j <N ; j++) {
+				if ( mat[i][j] == 2) {
+					num1++;
+				}else {
+					mat1[i][j] = num1;
+				}
+			}
+			num1++;
+		}
+		
+		for ( int i = 0 ; i< N ; i++) {
+			for (int j = 0 ; j < M ; j++) {
+				if ( mat[j][i] == 2) {
+					num2++;
+				}else {
+					mat2[j][i] = num2;
+				}
+			}
+			num2++;
+		}
+		
+		for ( int i = 0 ; i < M ; i++) {
 			for ( int j = 0 ; j < N ; j++) {
-				if ( mat[i][j] == 0 ) {
-					if ( checkCols(i,j) == true && checkRows(i,j) == true) {
-						mat[i][j] = 3;
-						System.out.println(i+","+j);
-						back(i,j,sum+1,false);
-						System.out.println("hi jack");
-						mat[i][j] = 0;
-					}
+				if ( mat1[i][j] != 0 && mat[i][j] == 0 ) {
+					adj[mat1[i][j]].add(mat2[i][j]);
 				}
 			}
 		}
 		
-	}
-	
-	public static boolean checkCols(int x,int y) {
 
-		int rightgoo = 0;
-		int leftgoo = 0;
-		int leftlimit = 0;
-		int rightlimit = 0;
-		
-		for ( int i = y+1 ; i < N ; i++) {
-			if ( y >= N) {
-				break;
+		int ans = 0;
+		visit = new boolean[10001];
+		B = new int[10001];
+		Arrays.fill(B, -1);
+
+		for ( int i = 1 ; i <= 10000 ; i++) {
+			Arrays.fill(visit, false);
+			if ( DFS(i) ) {
+				ans++;
 			}
 			
-			if ( mat[x][i] == 2) {
-				rightlimit = i;
-				break;
-			}else if ( mat[x][i] == 1) {
-				rightgoo++;
-			}else if ( mat[x][i] == 3) {
-				return false;
-			}
 		}
 		
-		for ( int i = y-1 ; i >= 0 ; i--) {
-			if ( i < 0 ) {
-				break;
+		System.out.println(ans);
+	}
+	
+	
+	public static boolean DFS(int now) {
+		if ( visit[now] ) {
+			return false;
+		}
+		visit[now] = true;
+		
+		for ( int i = 0 ; i < adj[now].size(); i++) {
+			int nx = adj[now].get(i);
+			if ( B[nx] == -1 || DFS(B[nx]) ) {
+				B[nx] = now;
+				return true;
 			}
 			
-			if ( mat[x][i] == 2) {
-				leftlimit = i;
-				break;
-			}else if ( mat[x][i] == 1) {
-				leftgoo++;
-			}else if ( mat[x][i] == 3) {
-				return false;
-			}
 		}
 		
-		if ( rightlimit - leftlimit == 2) {
-			return false;
-		}
-		
-		if ( leftgoo + rightgoo == rightlimit - leftlimit - 2 ) {
-			return false;
-		}
-		
-		
-		return true;
+		return false;
 		
 	}
 	
-	public static boolean checkRows(int x,int y) {
-		
-		int upgoo = 0;
-		int downgoo = 0;
-		int uplimit = 0;
-		int downlimit = 0;
-		
-		for ( int i = x+1 ; i < M ; i++) {
-			if ( i >= M) {
-				break;
-			}
-			
-			if ( mat[i][y] == 2) {
-				downlimit = i;
-				break;
-			}else if ( mat[i][y] == 1) {
-				downgoo++;
-			}else if ( mat[i][y] == 3) {
-				return false;
-			}
-		}
-		
-		for ( int i = x-1 ; i >= 0 ; i--) {
-			if ( i < 0 ) {
-				break;
-			}
-			
-			if ( mat[i][y] == 2) {
-				uplimit = i;
-				break;
-			}else if ( mat[i][y] == 1) {
-				upgoo++;
-			}else if ( mat[i][y] == 3) {
-				return false;
-			}
-		}
-		
-		if ( downlimit - uplimit == 2) {
-			return false;
-		}
-		
-		if ( downgoo + upgoo == downlimit - uplimit - 2 ) {
-			return false;
-		}
-		
-		
-		return true;
-	}
+
 }
