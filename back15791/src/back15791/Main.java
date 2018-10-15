@@ -8,17 +8,13 @@ public class Main {
 		int N = in.nextInt();
 		int M = in.nextInt();
 		
-		long boonmo = 1;
-		long boonza = 1;
+		int dp[] = new int[N];
 		
-		for (int i = 2 ; i <= M ; i++) {
-			boonmo =  ( boonmo * i ) % 1000000007;
+		for ( int i = 0 ; i < N ; i++) {
+			
+			
+			
 		}
 		
-		for ( int i = N ; i >= N-M+1 ; i--) {
-			boonza = ( boonza * i ) % 1000000007;
-		}
-		
-		System.out.println(boonza/boonmo);
 	}
 }

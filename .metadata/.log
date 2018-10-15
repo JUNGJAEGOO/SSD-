@@ -1,4 +1,4 @@
-!SESSION 2018-10-07 14:30:38.766 -----------------------------------------------
+!SESSION 2018-10-13 21:55:26.811 -----------------------------------------------
 eclipse.buildId=4.7.1.M20171009-0410
 java.version=9.0.1
 java.vendor=Oracle Corporation
@@ -6,61 +6,10 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
 Framework arguments:  -product org.eclipse.epp.package.java.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
 
-This is a continuation of log file C:\Users\worn1\eclipse-workspace\.metadata\.bak_6.log
-Created Time: 2018-10-07 18:05:32.712
+This is a continuation of log file C:\Users\worn1\eclipse-workspace\.metadata\.bak_0.log
+Created Time: 2018-10-13 22:13:00.318
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:05:32.715
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1342\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:196)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:613)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:218)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:106)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:361)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:377)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
-	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
-	at org.eclipse.egit.ui.internal.resources.ResourceStateFactory.getIndexDiffDataOrNull(ResourceStateFactory.java:89)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:227)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:204)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:104)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:377)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:359)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:347)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:05:32.718
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1342\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:196)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:613)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:218)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:106)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:361)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:377)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
-	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:51)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:236)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:204)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:104)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:377)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:359)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:347)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:05:33.050
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:13:00.322
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1722\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -86,7 +35,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:05:33.053
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:13:00.325
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1722\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -111,7 +60,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:05:33.264
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:13:00.567
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2513\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -137,7 +86,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:05:33.267
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:13:00.571
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2513\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -162,58 +111,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:05:33.315
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2616\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:196)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:613)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:218)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:106)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:361)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:377)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
-	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
-	at org.eclipse.egit.ui.internal.resources.ResourceStateFactory.getIndexDiffDataOrNull(ResourceStateFactory.java:89)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:227)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:204)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:104)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:377)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:359)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:347)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:05:33.319
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2616\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:196)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:613)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:218)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:106)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:361)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:377)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
-	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:51)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:236)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:204)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:104)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:377)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:359)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:347)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:05:37.256
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:13:43.258
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1342\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -239,7 +137,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:05:37.259
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:13:43.262
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1342\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -264,7 +162,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:05:37.591
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:13:43.609
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1722\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -290,7 +188,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:05:37.595
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:13:43.614
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1722\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -315,7 +213,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:05:37.797
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:13:43.819
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2513\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -341,7 +239,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:05:37.801
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:13:43.823
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2513\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -366,58 +264,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:05:37.849
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2616\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:196)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:613)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:218)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:106)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:361)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:377)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
-	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
-	at org.eclipse.egit.ui.internal.resources.ResourceStateFactory.getIndexDiffDataOrNull(ResourceStateFactory.java:89)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:227)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:204)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:104)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:377)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:359)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:347)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:05:37.852
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2616\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:196)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:613)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:218)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:106)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:361)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:377)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
-	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:51)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:236)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:204)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:104)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:377)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:359)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:347)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:05:49.617
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:13:51.171
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1342\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -443,7 +290,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:05:49.620
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:13:51.175
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1342\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -468,7 +315,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:05:49.964
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:13:51.523
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1722\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -494,7 +341,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:05:49.967
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:13:51.527
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1722\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -519,7 +366,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:05:50.166
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:13:51.734
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2513\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -545,7 +392,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:05:50.170
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:13:51.738
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2513\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -570,58 +417,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:05:50.216
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2616\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:196)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:613)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:218)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:106)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:361)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:377)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
-	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
-	at org.eclipse.egit.ui.internal.resources.ResourceStateFactory.getIndexDiffDataOrNull(ResourceStateFactory.java:89)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:227)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:204)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:104)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:377)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:359)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:347)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:05:50.220
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2616\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:196)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:613)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:218)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:106)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:361)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:377)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
-	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:51)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:236)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:204)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:104)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:377)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:359)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:347)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:05:51.736
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:14:10.019
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1342\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -647,7 +443,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:05:51.740
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:14:10.022
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1342\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -672,7 +468,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:05:52.067
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:14:10.373
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1722\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -698,7 +494,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:05:52.071
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:14:10.377
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1722\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -723,7 +519,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:05:52.265
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:14:10.586
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2513\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -749,7 +545,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:05:52.266
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:14:10.590
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2513\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -774,58 +570,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:05:52.312
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2616\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:196)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:613)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:218)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:106)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:361)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:377)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
-	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
-	at org.eclipse.egit.ui.internal.resources.ResourceStateFactory.getIndexDiffDataOrNull(ResourceStateFactory.java:89)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:227)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:204)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:104)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:377)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:359)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:347)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:05:52.315
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2616\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:196)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:613)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:218)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:106)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:361)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:377)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
-	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:51)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:236)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:204)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:104)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:377)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:359)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:347)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:05:53.348
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:14:45.336
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1342\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -851,7 +596,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:05:53.352
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:14:45.340
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1342\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -876,7 +621,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:05:53.670
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:14:45.684
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1722\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -902,7 +647,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:05:53.674
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:14:45.688
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1722\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -927,7 +672,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:05:53.875
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:14:45.900
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2513\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -953,7 +698,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:05:53.879
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:14:45.904
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2513\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -978,58 +723,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:05:53.924
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2616\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:196)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:613)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:218)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:106)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:361)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:377)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
-	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
-	at org.eclipse.egit.ui.internal.resources.ResourceStateFactory.getIndexDiffDataOrNull(ResourceStateFactory.java:89)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:227)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:204)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:104)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:377)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:359)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:347)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:05:53.928
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2616\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:196)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:613)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:218)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:106)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:361)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:377)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
-	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:51)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:236)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:204)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:104)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:377)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:359)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:347)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:11:21.918
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:14:46.686
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1342\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -1055,7 +749,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:11:21.922
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:14:46.691
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1342\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -1080,7 +774,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:11:22.250
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:14:47.077
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1722\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -1106,7 +800,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:11:22.254
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:14:47.082
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1722\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -1131,7 +825,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:11:22.448
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:14:47.299
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2513\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -1157,7 +851,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:11:22.452
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:14:47.303
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2513\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -1182,58 +876,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:11:22.506
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2616\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:196)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:613)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:218)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:106)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:361)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:377)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
-	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
-	at org.eclipse.egit.ui.internal.resources.ResourceStateFactory.getIndexDiffDataOrNull(ResourceStateFactory.java:89)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:227)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:204)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:104)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:377)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:359)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:347)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:11:22.510
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2616\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:196)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:613)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:218)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:106)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:361)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:377)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
-	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:51)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:236)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:204)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:104)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:377)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:359)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:347)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:11:24.512
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:18:50.798
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1342\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -1259,7 +902,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:11:24.516
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:18:50.802
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1342\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -1284,7 +927,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:11:24.844
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:18:51.136
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1722\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -1310,7 +953,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:11:24.847
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:18:51.140
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1722\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -1335,7 +978,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:11:25.043
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:18:51.377
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2513\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -1361,7 +1004,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:11:25.047
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:18:51.381
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2513\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -1386,58 +1029,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:11:25.093
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2616\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:196)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:613)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:218)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:106)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:361)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:377)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
-	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
-	at org.eclipse.egit.ui.internal.resources.ResourceStateFactory.getIndexDiffDataOrNull(ResourceStateFactory.java:89)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:227)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:204)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:104)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:377)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:359)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:347)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:11:25.097
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2616\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:196)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:613)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:218)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:106)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:361)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:377)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
-	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:51)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:236)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:204)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:104)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:377)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:359)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:347)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:11:32.318
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:19:04.348
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1342\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -1463,7 +1055,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:11:32.322
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:19:04.352
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1342\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -1488,7 +1080,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:11:32.643
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:19:04.705
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1722\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -1514,7 +1106,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:11:32.647
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:19:04.709
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1722\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -1539,7 +1131,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:11:32.845
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:19:04.918
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2513\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -1565,7 +1157,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:11:32.849
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:19:04.922
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2513\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -1590,58 +1182,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:11:32.895
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2616\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:196)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:613)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:218)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:106)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:361)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:377)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
-	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
-	at org.eclipse.egit.ui.internal.resources.ResourceStateFactory.getIndexDiffDataOrNull(ResourceStateFactory.java:89)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:227)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:204)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:104)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:377)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:359)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:347)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:11:32.898
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2616\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:196)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:613)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:218)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:106)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:361)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:377)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
-	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:51)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:236)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:204)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:104)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:377)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:359)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:347)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:11:39.451
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:19:08.883
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1342\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -1667,7 +1208,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:11:39.455
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:19:08.887
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1342\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -1692,7 +1233,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:11:39.781
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:19:09.242
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1722\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -1718,7 +1259,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:11:39.785
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:19:09.246
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1722\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -1743,7 +1284,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:11:39.982
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:19:09.457
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2513\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -1769,7 +1310,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:11:39.986
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:19:09.461
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2513\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -1794,58 +1335,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:11:40.036
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2616\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:196)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:613)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:218)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:106)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:361)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:377)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
-	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
-	at org.eclipse.egit.ui.internal.resources.ResourceStateFactory.getIndexDiffDataOrNull(ResourceStateFactory.java:89)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:227)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:204)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:104)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:377)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:359)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:347)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:11:40.040
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2616\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:196)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:613)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:218)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:106)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:361)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:377)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
-	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:51)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:236)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:204)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:104)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:377)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:359)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:347)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:11:45.647
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:19:35.958
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1342\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -1871,7 +1361,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:11:45.650
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:19:35.962
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1342\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -1896,7 +1386,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:11:45.985
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:19:36.306
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1722\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -1922,7 +1412,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:11:45.989
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:19:36.310
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1722\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -1947,7 +1437,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:11:46.186
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:19:36.541
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2513\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -1973,7 +1463,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:11:46.190
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:19:36.545
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2513\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -1998,58 +1488,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:11:46.237
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2616\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:196)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:613)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:218)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:106)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:361)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:377)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
-	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
-	at org.eclipse.egit.ui.internal.resources.ResourceStateFactory.getIndexDiffDataOrNull(ResourceStateFactory.java:89)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:227)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:204)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:104)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:377)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:359)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:347)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:11:46.242
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2616\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:196)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:613)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:218)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:106)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:361)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:377)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
-	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:51)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:236)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:204)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:104)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:377)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:359)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:347)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:12:05.253
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:19:40.715
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1342\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -2075,7 +1514,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:12:05.257
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:19:40.719
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1342\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -2100,7 +1539,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:12:05.597
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:19:41.065
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1722\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -2126,7 +1565,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:12:05.600
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:19:41.069
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1722\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -2151,7 +1590,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:12:05.802
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:19:41.279
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2513\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -2177,7 +1616,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:12:05.806
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:19:41.283
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2513\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -2202,58 +1641,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:12:05.857
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2616\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:196)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:613)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:218)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:106)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:361)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:377)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
-	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
-	at org.eclipse.egit.ui.internal.resources.ResourceStateFactory.getIndexDiffDataOrNull(ResourceStateFactory.java:89)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:227)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:204)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:104)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:377)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:359)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:347)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:12:05.861
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2616\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:196)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:613)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:218)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:106)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:361)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:377)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
-	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:51)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:236)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:204)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:104)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:377)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:359)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:347)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:12:07.600
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:23:15.536
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1342\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -2279,7 +1667,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:12:07.604
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:23:15.540
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1342\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -2304,7 +1692,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:12:07.931
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:23:15.897
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1722\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -2330,7 +1718,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:12:07.935
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:23:15.901
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1722\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -2355,7 +1743,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:12:08.129
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:23:16.112
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2513\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -2381,7 +1769,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:12:08.133
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:23:16.116
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2513\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -2406,58 +1794,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:12:08.179
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2616\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:196)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:613)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:218)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:106)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:361)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:377)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
-	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
-	at org.eclipse.egit.ui.internal.resources.ResourceStateFactory.getIndexDiffDataOrNull(ResourceStateFactory.java:89)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:227)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:204)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:104)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:377)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:359)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:347)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:12:08.183
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2616\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:196)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:613)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:218)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:106)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:361)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:377)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
-	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:51)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:236)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:204)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:104)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:377)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:359)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:347)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:13:00.114
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:24:20.714
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1342\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -2483,7 +1820,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:13:00.118
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:24:20.719
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1342\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -2508,7 +1845,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:13:00.441
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:24:21.055
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1722\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -2534,7 +1871,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:13:00.445
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:24:21.059
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1722\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -2559,7 +1896,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:13:00.638
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:24:21.263
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2513\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -2585,7 +1922,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:13:00.642
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:24:21.267
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2513\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -2610,58 +1947,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:13:00.690
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2616\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:196)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:613)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:218)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:106)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:361)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:377)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
-	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
-	at org.eclipse.egit.ui.internal.resources.ResourceStateFactory.getIndexDiffDataOrNull(ResourceStateFactory.java:89)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:227)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:204)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:104)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:377)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:359)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:347)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:13:00.694
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2616\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:196)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:613)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:218)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:106)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:361)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:377)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
-	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:51)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:236)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:204)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:104)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:377)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:359)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:347)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:13:11.838
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:24:27.616
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1342\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -2687,7 +1973,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:13:11.842
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:24:27.620
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1342\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -2712,7 +1998,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:13:12.171
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:24:27.987
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1722\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -2738,7 +2024,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:13:12.175
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:24:27.992
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1722\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -2763,7 +2049,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:13:12.368
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:24:28.207
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2513\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -2789,7 +2075,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:13:12.372
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:24:28.211
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2513\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -2814,58 +2100,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:13:12.417
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2616\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:196)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:613)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:218)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:106)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:361)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:377)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
-	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
-	at org.eclipse.egit.ui.internal.resources.ResourceStateFactory.getIndexDiffDataOrNull(ResourceStateFactory.java:89)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:227)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:204)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:104)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:377)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:359)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:347)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:13:12.421
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2616\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:196)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:613)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:218)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:106)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:361)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:377)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
-	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:51)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:236)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:204)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:104)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:377)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:359)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:347)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:13:14.916
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:25:05.526
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1342\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -2891,7 +2126,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:13:14.920
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:25:05.530
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1342\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -2916,7 +2151,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:13:15.244
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:25:05.875
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1722\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -2942,7 +2177,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:13:15.248
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:25:05.879
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1722\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -2967,7 +2202,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:13:15.442
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:25:06.093
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2513\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -2993,7 +2228,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:13:15.446
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:25:06.097
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2513\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -3018,58 +2253,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:13:15.492
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2616\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:196)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:613)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:218)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:106)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:361)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:377)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
-	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
-	at org.eclipse.egit.ui.internal.resources.ResourceStateFactory.getIndexDiffDataOrNull(ResourceStateFactory.java:89)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:227)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:204)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:104)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:377)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:359)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:347)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:13:15.496
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2616\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:196)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:613)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:218)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:106)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:361)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:377)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
-	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:51)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:236)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:204)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:104)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:377)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:359)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:347)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:13:18.020
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:25:14.036
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1342\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -3095,7 +2279,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:13:18.025
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:25:14.040
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1342\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -3120,7 +2304,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:13:18.343
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:25:14.402
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1722\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -3146,7 +2330,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:13:18.347
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:25:14.407
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1722\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -3171,7 +2355,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:13:18.559
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:25:14.622
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2513\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -3197,7 +2381,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:13:18.563
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:25:14.626
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2513\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -3222,58 +2406,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:13:18.610
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2616\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:196)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:613)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:218)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:106)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:361)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:377)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
-	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
-	at org.eclipse.egit.ui.internal.resources.ResourceStateFactory.getIndexDiffDataOrNull(ResourceStateFactory.java:89)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:227)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:204)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:104)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:377)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:359)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:347)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:13:18.614
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2616\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:196)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:613)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:218)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:106)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:361)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:377)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
-	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:51)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:236)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:204)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:104)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:377)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:359)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:347)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:13:59.139
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:25:40.818
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1342\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -3299,7 +2432,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:13:59.143
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:25:40.822
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1342\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -3324,7 +2457,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:13:59.473
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:25:41.164
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1722\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -3350,7 +2483,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:13:59.477
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:25:41.168
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1722\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -3375,7 +2508,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:13:59.673
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:25:41.373
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2513\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -3401,7 +2534,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:13:59.677
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:25:41.378
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2513\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -3426,58 +2559,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:13:59.723
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2616\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:196)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:613)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:218)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:106)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:361)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:377)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
-	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
-	at org.eclipse.egit.ui.internal.resources.ResourceStateFactory.getIndexDiffDataOrNull(ResourceStateFactory.java:89)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:227)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:204)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:104)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:377)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:359)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:347)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:13:59.727
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2616\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:196)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:613)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:218)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:106)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:361)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:377)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
-	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:51)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:236)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:204)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:104)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:377)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:359)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:347)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:14:06.199
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:25:42.473
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1342\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -3503,7 +2585,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:14:06.203
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:25:42.477
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1342\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -3528,7 +2610,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:14:06.538
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:25:42.818
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1722\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -3554,7 +2636,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:14:06.542
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:25:42.822
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1722\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -3579,7 +2661,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:14:06.757
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:25:43.071
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2513\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -3605,7 +2687,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:14:06.761
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:25:43.075
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2513\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -3630,58 +2712,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:14:06.807
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2616\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:196)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:613)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:218)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:106)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:361)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:377)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
-	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
-	at org.eclipse.egit.ui.internal.resources.ResourceStateFactory.getIndexDiffDataOrNull(ResourceStateFactory.java:89)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:227)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:204)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:104)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:377)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:359)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:347)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:14:06.811
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2616\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:196)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:613)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:218)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:106)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:361)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:377)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
-	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:51)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:236)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:204)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:104)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:377)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:359)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:347)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:14:21.116
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:25:47.531
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1342\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -3707,7 +2738,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:14:21.120
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:25:47.535
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1342\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -3732,7 +2763,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:14:21.439
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:25:47.901
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1722\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -3758,7 +2789,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:14:21.443
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:25:47.905
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1722\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -3783,7 +2814,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:14:21.642
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:25:48.131
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2513\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -3809,7 +2840,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:14:21.646
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:25:48.135
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2513\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -3834,58 +2865,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:14:21.692
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2616\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:196)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:613)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:218)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:106)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:361)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:377)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
-	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
-	at org.eclipse.egit.ui.internal.resources.ResourceStateFactory.getIndexDiffDataOrNull(ResourceStateFactory.java:89)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:227)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:204)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:104)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:377)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:359)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:347)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:14:21.696
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2616\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:196)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:613)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:218)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:106)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:361)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:377)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
-	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:51)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:236)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:204)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:104)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:377)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:359)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:347)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:15:49.862
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:25:51.906
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1342\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -3911,7 +2891,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:15:49.866
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:25:51.910
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1342\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -3936,7 +2916,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:15:50.185
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:25:52.263
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1722\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -3962,7 +2942,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:15:50.189
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:25:52.267
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1722\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -3987,7 +2967,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:15:50.390
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:25:52.484
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2513\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -4013,7 +2993,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:15:50.394
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:25:52.488
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2513\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -4038,58 +3018,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:15:50.440
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2616\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:196)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:613)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:218)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:106)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:361)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:377)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
-	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
-	at org.eclipse.egit.ui.internal.resources.ResourceStateFactory.getIndexDiffDataOrNull(ResourceStateFactory.java:89)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:227)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:204)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:104)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:377)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:359)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:347)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:15:50.444
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2616\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:196)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:613)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:218)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:106)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:361)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:377)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
-	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:51)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:236)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:204)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:104)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:377)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:359)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:347)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:16:01.743
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:26:23.556
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1342\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -4115,7 +3044,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:16:01.747
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:26:23.560
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1342\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -4140,7 +3069,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:16:02.069
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:26:23.914
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1722\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -4166,7 +3095,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:16:02.073
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:26:23.917
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back1722\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -4191,7 +3120,7 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:16:02.276
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:26:24.135
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2513\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
@@ -4217,61 +3146,10 @@ java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugi
 	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:16:02.280
+!ENTRY org.eclipse.egit.core 4 0 2018-10-13 22:26:24.139
 !MESSAGE Git team provider configuration has gone missing.
 !STACK 0
 java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2513\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:196)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:613)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:218)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:106)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:361)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:377)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
-	at org.eclipse.egit.ui.internal.decorators.DecoratableResourceAdapter.<init>(DecoratableResourceAdapter.java:51)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:236)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:204)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:104)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:377)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:359)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:347)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:16:02.326
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2616\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:196)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
-	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:613)
-	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:218)
-	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:106)
-	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:361)
-	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:377)
-	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:317)
-	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
-	at org.eclipse.egit.ui.internal.resources.ResourceStateFactory.getIndexDiffDataOrNull(ResourceStateFactory.java:89)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:227)
-	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:204)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:253)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:104)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:377)
-	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:359)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:347)
-	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:311)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.egit.core 4 0 2018-10-07 18:16:02.330
-!MESSAGE Git team provider configuration has gone missing.
-!STACK 0
-java.io.FileNotFoundException: C:\Users\worn1\eclipse-workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\back2616\org.eclipse.egit.core\GitProjectData.properties (지정된 파일을 찾을 수 없습니다)
 	at java.base/java.io.FileInputStream.open0(Native Method)
 	at java.base/java.io.FileInputStream.open(FileInputStream.java:196)
 	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:139)
