@@ -1,86 +1,66 @@
 package back14718;
-
 import java.util.*;
+import java.io.*;
 
 public class Main {
 	static ArrayList<node> list = new ArrayList<>();
 	static int min = 1000000000;
 	static int N,K;
-	static int dp[][];
-	public static void main(String args[]) {
-		Scanner in = new Scanner(System.in);
-		N = in.nextInt();
-		K = in.nextInt();
+	
+	public static void main(String args[]) throws Exception {
+		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(in.readLine()," ");
+		N = Integer.parseInt(st.nextToken());
+		K = Integer.parseInt(st.nextToken());
 		for (int i = 0; i < N ; i++) {
-			list.add(new node(in.nextInt(),in.nextInt(),in.nextInt()));
+			st = new StringTokenizer(in.readLine()," ");
+			int a = Integer.parseInt(st.nextToken());
+			int b = Integer.parseInt(st.nextToken());
+			int c = Integer.parseInt(st.nextToken());
+			list.add(new node(a,b,c));
 		}
 		
-		func(0,0,0,0,0,0);
-		System.out.println(min);
-	}
-	
-	public static void func(int idx,int win,int sum,int str,int dex,int wise) {
+		Collections.sort(list);
 		
-		if ( idx == N && win < K) {
-			return;
-		}
-		
-		if ( win == K) {
-			if ( sum < min) {
-				min = sum;
+		for ( int x = 0 ; x < N ; x++) {
+			for ( int y = 0 ;y < N ; y++) {
+				
+				int cnt = 0;
+				for ( int z = 0 ;z < N ; z++) {
+					
+					if ( list.get(z).str <= list.get(x).str && list.get(z).dex <= list.get(y).dex) {
+						cnt++;
+					}
+					
+					if ( cnt == K) {
+						min = Math.min(min, list.get(x).str + list.get(y).dex + list.get(z).wise);
+						break;
+					}
+					
+				}
 			}
-			return;
 		}
 		
-		int STR = list.get(idx).str;
-		int DEX = list.get(idx).dex;
-		int WISE = list.get(idx).wise;
-		
-		int diffSTR = STR-str;
-		int diffDEX = DEX-dex;
-		int diffWISE = WISE-wise;
-		int nextSTR;
-		int nextDEX;
-		int nextWISE;
-		int sumSTR;
-		int sumDEX;
-		int sumWISE;
-		
-		if ( diffSTR > 0) {
-			nextSTR = diffSTR;
-			sumSTR = diffSTR;
-		}else {
-			nextSTR = str;
-			sumSTR = 0;
-		}
-		
-		if ( diffDEX > 0) {
-			nextDEX = diffDEX;
-			sumDEX = diffDEX;
-		}else {
-			nextDEX = dex;
-			sumDEX = 0;
-		}
-		
-		if ( diffWISE > 0) {
-			nextWISE = diffWISE;
-			sumWISE = diffWISE;
-		}else {
-			nextWISE = wise;
-			sumWISE = 0;
-		}
-		
-		func(idx+1,win+1,sum+sumSTR+sumDEX+sumWISE,nextSTR,nextDEX,nextWISE);
-		func(idx+1,win,sum,str,dex,wise);
+		System.out.print(min);
 		
 	}
 	
-	public static class node{
+	
+	public static class node implements Comparable<node>{
 		int str,dex,wise;
+		
 		node (int str,int dex,int wise){
 			this.str = str;
 			this.dex = dex;
 			this.wise = wise;
+		}
+
+		@Override
+		public int compareTo(node o) {
+			if ( this.wise > o.wise) {
+				return 1;
+			}
+			return -1;
 		}
 	}
 }

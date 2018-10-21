@@ -4,79 +4,43 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
-	static ArrayList<ArrayList<Integer>> adj = new ArrayList<>();
 	
 	public static void main(String args[]) throws IOException {
 		//Scanner in = new Scanner(System.in);
 		BufferedReader br = new BufferedReader ( new InputStreamReader(System.in));
 		int N = Integer.parseInt(br.readLine());
-		int arr[][]= new int[N][9];
-		
-		
-		ArrayList<Integer> tmp = new ArrayList<>();
-		make(0,tmp);
+		int cnt[] = new int[19683];
 		
 		for ( int i = 0 ; i < N ; i++) {
 			StringTokenizer st = new StringTokenizer(br.readLine()," ");
+			int tmp = 0;
 			for ( int j = 0 ; j < 9 ; j++) {
-				arr[i][j] = Integer.parseInt(st.nextToken());
+				tmp = tmp*3 + Integer.parseInt(st.nextToken()) - 1;
 			}
+			cnt[tmp]++;
 		}
 		
 		int max = 0;
-		int min = Integer.MAX_VALUE;
-		for ( int i = 0 ; i < adj.size() ; i++) {
+		int min = (int)1e9;
+		for ( int i = 0 ; i < cnt.length ; i++) {
 			
 			int sum = 0;
-			
-			
-			for ( int j = 0 ; j < N ; j++) {
-				boolean pass = true;
-				for ( int k = 0 ; k < 9 ; k++) {
-					if ( adj.get(i).get(k) == arr[j][k] ) {
-						pass = false;
-						break;
-					}
-				}
+			for ( int j = 0 ; j < 1<<9 ;j++) {
 				
-				if (pass) {
-					sum++;
+				int tmp = 0;
+				int ti = i;
+				int tj = j;
+				for ( int k = 0 ; k < 9 ; k++ ,ti /=3 , tj /=2) {
+					tmp = tmp*3 + ( ti%3 + tj%2) % 3;
+					
 				}
+				sum += cnt[tmp];
+				
 			}
-			
-			if ( sum > max) {
-				max = sum;
-			}
-			if ( sum < min) {
-				min = sum;
-			}
-			
+			max = Math.max(max, sum);
+			min = Math.min(min, sum);
 		}
-		
 		System.out.print(min+" "+max);
 	}
-	
-	public static void make(int len,ArrayList<Integer> list) {
-		
-		
-		if ( len == 9 ) {
-			//System.out.println(list);
-			ArrayList<Integer> tmp = new ArrayList<>();
-			for ( int i = 0 ; i < 9 ; i++) {
-				tmp.add(list.get(i));
-			}
-			adj.add(tmp);
-			
-			return;
-		}
-		
-		for ( int i = 1  ; i <= 3 ; i++) {
-			list.add(i);
-			make(len+1,list);
-			list.remove(list.size()-1);
-			
-		}
-	}
-	
 	
 }
